@@ -1,3 +1,22 @@
+Project Background:
+This project was initially created in response to a previous prospective employer to showcase some of my ability in working with both React as well as a Python back end. This project contains a React front end and a back-end RESTful API built with Pyramid. In order to follow the instructions below, you will need to have Python3+ and npm. Thanks and hope you enjoy!
+
+Installation Instructions:
+1.	Clone the git repo to your machine
+2.	Create a virtualenv for the project and activate it: 
+   	$ python -m venv venv
+   **FOR WINDOWS** $ venv/Scripts/Activate.ps1
+    **FOR LINUX** $ source venv/Scripts/activate.bat
+3.	Install Pyramid:
+$ pip install pyramid
+4.	Run the app: 
+$ python app.py
+5.	You should receive a message that the server is running on port 5000. Next simply open a new cmd window and cd to the ‘travelmania’ folder. Once there, type $ npm install
+6.	This will install the React application to your machine. Once completed, type $ npm start or $ yarn start to run the application. 
+
+
+
+Project Requirements:
 Create a static react app that contacts a RESTful interface to display
 a list of airline flights, allows the user to select one and enter
 passenger data, submits that data back to the RESTful interface, and
@@ -17,18 +36,87 @@ It has these endpoints:
 GET /flights - returns JSON in the form:
 
     {
-        "flights": [
-            {
-                "number": "AA1234", "airline": "Awesome Airlines",
-                "departs": {
-                    "airport": "SFO", "when": "2015-01-01T12:00:00"
-                }, "arrives": {
-                    "airport": "IAH", "when": "2014-01-01T19:00:00"
-                }, "cost": 567.89
-            }, # ...
-        ]
-    }
-
+    "flights": [
+        {
+            "airline": "Mobius Airways",
+            "cost": 567.89,
+            "departs": {
+                "airport": "SFO",
+                "when": "2015-01-01T12:00:00"
+            },
+            "arrives": {
+                "airport": "IAH",
+                "when": "2015-01-01T16:00:00"
+            },
+            "number": "MO123"
+        },
+        {
+            "airline": "Mobius Airways",
+            "cost": 321.98,
+            "departs": {
+                "airport": "ABQ",
+                "when": "2015-01-01T12:30:00"
+            },
+            "arrives": {
+                "airport": "ATL",
+                "when": "2015-01-01T15:30:00"
+            },
+            "number": "MO347"
+        },
+        {
+            "airline": "Mobius Airways",
+            "cost": 678.9,
+            "departs": {
+                "airport": "SFO",
+                "when": "2015-01-01T10:15:00"
+            },
+            "arrives": {
+                "airport": "STL",
+                "when": "2015-01-01T16:45:00"
+            },
+            "number": "MO102"
+        },
+        {
+            "airline": "Mobius Airways",
+            "cost": 456.78,
+            "departs": {
+                "airport": "SFO",
+                "when": "2015-01-01T09:35:00"
+            },
+            "arrives": {
+                "airport": "OMA",
+                "when": "2015-01-01T14:40:00"
+            },
+            "number": "MO77"
+        },
+        {
+            "airline": "Mobius Airways",
+            "cost": 237.78,
+            "departs": {
+                "airport": "ATL",
+                "when": "2015-01-01T01:35:00"
+            },
+            "arrives": {
+                "airport": "IAH",
+                "when": "2015-01-01T18:40:00"
+            },
+            "number": "MO502"
+        },
+        {
+            "airline": "Mobius Airways",
+            "cost": 899.99,
+            "departs": {
+                "airport": "SFO",
+                "when": "2015-01-01T09:35:00"
+            },
+            "arrives": {
+                "airport": "LGA",
+                "when": "2015-01-01T18:30:00"
+            },
+            "number": "MO177"
+        }
+    ]
+}
 POST /book - accepts data:
 
     {
@@ -68,3 +156,5 @@ You are responsible for the workflow and design
 You will be submitting a Github Repo containing HTML, JS, CSS, and additional
 resources (images, etc.).  You may (and probably should!) use any third party
 components / libraries you are comfortable with.
+
+
