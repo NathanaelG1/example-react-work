@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Aux from 'react-aux';
 import headerPhoto from '../../img/logo.jpg';
 import styles from './Header.module.css';
 
@@ -17,9 +16,9 @@ render() {
         </header>
 
     return (
-        <Aux>
+        <>
         {header}
-        </Aux>
+        </>
     );
 }
 

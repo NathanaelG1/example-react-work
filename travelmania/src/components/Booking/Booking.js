@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styles from './Booking.module.css';
 import axios from 'axios';
 import Flights from './Flights/Flights';
-import Aux from 'react-aux';
 import Input from './Input/Input';
 import moment from 'moment';
 import airports from 'airport-codes';
@@ -222,7 +221,7 @@ export default class Booking extends Component {
         
         if (!this.state.orderAttempted && !this.state.orderSuccessful)  {
                 orderSummary = (
-                <Aux>
+                <>
                 <p>From: {ticket.departureLocation}</p>
                 <p>To: {ticket.destination}</p>
                 {ticket.departureDate === ticket.arrivalDate ?
@@ -254,11 +253,11 @@ export default class Booking extends Component {
                         className={styles.orderTicket}
                         onClick={()=>this.placeOrder(ticket.flightNumber)}>Order Ticket</button>
                 </div>
-                </Aux>
+                </>
             )
         } else if (this.state.orderAttempted && this.state.orderSuccessful) {
                 orderSummary = (
-                    <Aux>
+                    <>
                     <p>From: {ticket.departureLocation}</p>
                     <p>To: {ticket.destination}</p>
                     {ticket.departureDate === ticket.arrivalDate ?
@@ -272,11 +271,11 @@ export default class Booking extends Component {
                         confirmation number: {this.state.orderConfirmation}
                     </h3>
 
-                    </Aux>
+                    </>
                 );
             } else if (this.state.orderAttempted && !this.state.orderSuccessful) {
                 orderSummary = (
-                    <Aux>
+                    <>
                     <p>From: {ticket.departureLocation}</p>
                     <p>To: {ticket.destination}</p>
                     {ticket.departureDate === ticket.arrivalDate ?
@@ -289,7 +288,7 @@ export default class Booking extends Component {
                     <h3>Sorry, your order could not be completed. {this.state.orderFailedMessage}
                      Please try a different flight.</h3>
 
-                    </Aux>
+                    </>
                 );
                
             }
