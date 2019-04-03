@@ -8,9 +8,9 @@ Installation Instructions:
    **FOR WINDOWS** $ venv/Scripts/Activate.ps1
     **FOR LINUX** $ source venv/Scripts/activate.bat
 3.	Install Pyramid:
-$ pip install pyramid
+           $ pip install pyramid
 4.	Run the app: 
-$ python app.py
+           $ python app.py
 5.	You should receive a message that the server is running on port 5000. Next simply open a new cmd window and cd to the ‘travelmania’ folder. Once there, type $ npm install
 6.	This will install the React application to your machine. Once completed, type $ npm start or $ yarn start to run the application. 
 
