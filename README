@@ -2,7 +2,7 @@ Project Background:
 This project was initially created in response to a previous prospective employer to showcase some of my ability in working with both React as well as a Python back end. This project contains a React front end and a back-end RESTful API built with Pyramid. In order to follow the instructions below, you will need to have Python3+ and npm. Thanks and hope you enjoy!
 
 Installation Instructions:
-1.	Clone the git repo to your machine
+1.	Clone the git repo to your machine, $cd example-react-work
 2.	Create a virtualenv for the project and activate it: 
    	$ virtualenv venv
    **FOR WINDOWS** $ venv/Scripts/Activate.ps1
