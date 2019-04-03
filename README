@@ -1,5 +1,8 @@
 Project Background:
-This project was initially created in response to a previous prospective employer to showcase some of my ability in working with both React as well as a Python back end. This project contains a React front end and a back-end RESTful API built with Pyramid. In order to follow the instructions below, you will need to have Python3+ and npm. Thanks and hope you enjoy!
+This project was initially created in response to a previous prospective employer to showcase some of my ability
+in working with both React as well as a Python back end. This project contains a React front end and a back-end 
+RESTful API built with Pyramid. In order to follow the instructions below, you will need to have Python3+ and npm.
+Thanks and hope you enjoy!
 
 Installation Instructions:
 1.	Clone the git repo to your machine, $cd example-react-work
@@ -11,8 +14,10 @@ Installation Instructions:
            $ pip install pyramid
 4.	Run the app: 
            $ python app.py
-5.	You should receive a message that the server is running on port 5000. Next simply open a new cmd window and cd to the ‘travelmania’ folder. Once there, type $ npm install
-6.	This will install the React application to your machine. Once finished, type $ npm start or $ yarn start to run the application. 
+	You should receive a message that the server is running on port 5000.
+5. Next simply open a new cmd window and cd to the ‘travelmania’ folder. 
+6. Once there, type $ npm install
+7.	This will install the React application to your machine. Once finished, type $ npm start or $ yarn start to run the application. 
 
 
 
